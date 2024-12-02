@@ -1,0 +1,20 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul
+{
+  list-style: none;
+}
+
+@font-face {
+  font-family: Terminus;
+  src: url(../fonts/Terminus.woff) format('woff'), /* modern browsers */
+       url(../fonts/Terminus.woff.ttf) format('truetype')
+       url(../fonts/terminus.ttf) format("truetype");
+  
+  font-display: swap;     /* Safari, Android, iOS */;
+}
