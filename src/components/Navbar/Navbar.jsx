@@ -1,10 +1,12 @@
 import "./_navbar.scss";
+import "../Socials/_socials.scss";
 import CartWidget from "./Cartwidget.jsx";
-import logo from "../../assets/img/logo.png";
+import dotted from "../../assets/img/ephemeral_dotted.png";
 import { NavLink } from "react-router-dom";
 
-
-
+import GitHub from "../Socials/GitHub.jsx";
+import LinkedIn from "../Socials/LinkedIn.jsx";
+import Instagram from "../Socials/Instagram.jsx";
 
 const Navbar = () => {
     return (
@@ -13,7 +15,7 @@ const Navbar = () => {
             <div className="navbar__container navbar__container--logo"> 
 
                 <NavLink to="/" className="navbar__logo-link">
-                    <img src={logo} alt="" className="navbar__icon"/> 
+                    <img src={dotted} alt="" className="navbar__icon navbar__icon--logo"/> 
                 </NavLink>
 
                 <div className="navbar__container navbar__container--text">
@@ -53,12 +55,21 @@ const Navbar = () => {
             <ul className="navbar__list navbar__list--socials">
 
                 <li className="navbar__list-item">
+                    <a className="navbar__link navbar__link--instagram" href="https://www.instagram.com/iosh.aa/" target="_blank">
+                        <Instagram className={"socials__icon socials__icon--instagram"}/>
+                    </a>
                 </li>
 
                 <li className="navbar__list-item">
+                    <a className="navbar__link navbar__link--github" href="https://github.com/IDJoshy" target="_blank">
+                        <GitHub className={"socials__icon socials__icon--github"}/>
+                    </a>
                 </li>
 
                 <li className="navbar__list-item">
+                    <a className="navbar__link navbar__link--linkedin" href="https://www.linkedin.com/in/joshua-auristondo-gonzales-b7a183304/" target="_blank">
+                        <LinkedIn className={"socials__icon socials__icon--linkedin"}/>
+                    </a>
                 </li>
             </ul>
 

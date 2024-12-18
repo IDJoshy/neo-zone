@@ -1,7 +1,6 @@
-$nav-height: 4em;
+$nav-height: 64px;
 $color-default: #e1faf9;
-$color-background: #040F16;
-$color-darker: #000022;
+$color-nav: #1c1e227e; //#1c1e22;
 $color-dark: #001242;
 $color-light: #005E7C;
 $color-lighter: #0094C6;
@@ -12,15 +11,15 @@ $color-lighter: #0094C6;
     top: 0;
     left: 0;
     height: $nav-height;
-    width: 100vw;
+    width: 100%;
     z-index: 5;
-    align-content: center;
-
-    backdrop-filter: blur(50px);
-    background-color: rgba($color-background, .95);
-
     display: flex;
     flex-direction: row;
+    justify-items: center;
+
+    backdrop-filter: blur(50px);
+    background-color: $color-nav;
+
     gap: 2.5em;
 
     &__container
@@ -44,6 +43,7 @@ $color-lighter: #0094C6;
         &--cart
         {
             align-items: center;
+            justify-content: center;
             margin-right: 1em;
             gap: 1em;
         }
@@ -57,30 +57,34 @@ $color-lighter: #0094C6;
 
         &--title
         {
-            font-size: 1.5em;
+            font-size: 1em;
         }
 
         &--subtitle
         {
-            font-size: 1em;
+            font-size: .9em;
         }
 
         &--cart
         {
-            font-size: 1.25em;
+            font-size: 1em;
         }
     }
 
     &__icon
     {
-        width: 50px;
-        height: 50px;
+        &--logo
+        {
+            width: 30px;
+            height: 30px;
+
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+        }
 
         &--cart
         {
-            width: 40px;
-            height: 40px;
-
+            width: 25px;
+            height: 25px;
             filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
         }
     }
@@ -93,30 +97,53 @@ $color-lighter: #0094C6;
         align-items: center;
         height: $nav-height;
         gap: 1em;
+
+        &--socials
+        {
+            gap:.5em;
+        }
     }
 
-    // &__list-item
-    // {
+    &__link
+    {
+        text-decoration: none;
+        width: fit-content;
+        height: fit-content;
 
-    // }
+        &:hover
+        {
+            .socials__icon--linkedin
+            {
+                fill: #0a66c2;
+            }
+
+            .socials__icon--github
+            {
+                fill: #865cd4;
+            }
+
+            .socials__icon--instagram path
+            {
+                fill: url(#instagram-gradient);
+            }
+        }
+    }
 
     &__button
     {
         cursor: pointer;
-        align-self: center;
-        align-items: center;
-        justify-content: center;
         background: none;
-        border: none;
         padding: 5px;
         color: $color-default;
         font-family: Terminus;
         font-size: 1em;
         transition: 100ms ease-in-out;
 
+        text-decoration: none;
+
         &:hover
         {
-            color: $color-darker;
+            color: $color-dark;
             background: $color-lighter;
         }
     }

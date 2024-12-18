@@ -125,7 +125,10 @@ const getProducts = () =>
 {
     return new Promise( (resolve, reject) => 
     {
-        resolve(products);
+        setTimeout(() => {
+            resolve(products);
+        }, 2000);
+        
     })
 }
 

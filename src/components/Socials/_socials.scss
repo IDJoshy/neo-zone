@@ -1,0 +1,17 @@
+$color-default: #e1faf9;
+.socials
+{
+    &__icon
+    {
+        width: 25px;
+        height: 25px;
+        fill: $color-default;
+        transition: fill .25s;
+        pointer-events: none;
+
+        &--instagram path
+        {
+            fill: url("#instagram-normal");
+        }
+    }
+}
