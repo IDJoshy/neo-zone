@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "title": "",
+        "description": "",
+        "price": 1,
+        "stock": 10,
+        "image": "",
+        "category": "plugins"
+    },
+    {
+        "id": 2,
+        "title": "",
+        "description": "",
+        "price": 1,
+        "stock": 4,
+        "image": "",
+        "category": "plugins"
+    },
+    {
+        "id": 3,
+        "title": "",
+        "description": "",
+        "price": 1,
+        "stock": 5,
+        "image": "",
+        "category": "plugins"
+    },
+    {
+        "id": 4,
+        "title": "",
+        "description": "",
+        "price": 1,
+        "stock": 17,
+        "image": "",
+        "category": "assets"
+    },
+    {
+        "id": 5,
+        "title": "",
+        "description": "",
+        "price": 800,
+        "stock": 2,
+        "image": "",
+        "category": "assets"
+    },
+    {
+        "id": 6,
+        "title": "",
+        "description": "",
+        "price": 1,
+        "stock": 6,
+        "image": "",
+        "category": "assets"
+    },
+    {
+        "id": 7,
+        "title": "",
+        "description": "",
+        "price": 1,
+        "stock": 6,
+        "image": "",
+        "category": "commissions"
+    },
+    {
+        "id": 8,
+        "title": "",
+        "description": "",
+        "price": 1,
+        "stock": 6,
+        "image": "",
+        "category": "commissions"
+    },
+    {
+        "id": 9,
+        "title": "",
+        "description": "",
+        "price": 1,
+        "stock": 6,
+        "image": "",
+        "category": "commissions"
+    },
+    {
+        "id": 10,
+        "title": "",
+        "description": "",
+        "price": 1,
+        "stock": 6,
+        "image": "",
+        "category": "courses"
+    },
+    {
+        "id": 11,
+        "title": "",
+        "description": "",
+        "price": 1,
+        "stock": 6,
+        "image": "",
+        "category": "courses"
+    },
+    {
+        "id": 12,
+        "title": "",
+        "description": "",
+        "price": 1,
+        "stock": 6,
+        "image": "",
+        "category": "courses"
+    }
+]

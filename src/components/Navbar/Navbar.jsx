@@ -1,6 +1,9 @@
 import "./_navbar.scss";
-import logo from "../../assets/img/logo.png";
 import CartWidget from "./Cartwidget.jsx";
+import logo from "../../assets/img/logo.png";
+import { NavLink } from "react-router-dom";
+
+
 
 
 const Navbar = () => {
@@ -8,12 +11,14 @@ const Navbar = () => {
         <nav className="navbar">
 
             <div className="navbar__container navbar__container--logo"> 
-                
-                <img src={logo} alt="" className="navbar__icon"/>
+
+                <NavLink to="/" className="navbar__logo-link">
+                    <img src={logo} alt="" className="navbar__icon"/> 
+                </NavLink>
 
                 <div className="navbar__container navbar__container--text">
-                    <strong className="navbar__text navbar__text--title">NeoZone</strong>
-                    <p className="navbar__text navbar__text--subtitle">Tienda de tecnología</p>    
+                    <strong className="navbar__text navbar__text--title">Ephemeral</strong>
+                    <p className="navbar__text navbar__text--subtitle">3D Assets Store</p>    
                 </div>
                 
             </div>
@@ -21,21 +26,27 @@ const Navbar = () => {
             <ul className="navbar__list navbar__list--links">
 
                 <li className="navbar__list-item">
-                    <button className="navbar__button">
-                    Hardware
-                    </button>
+                    <NavLink to="/category/plugins" className={ ({ isActive }) => (isActive ? "navbar__button navbar__button--active" : "navbar__button")}>
+                    Plugins
+                    </NavLink>
                 </li>
 
                 <li className="navbar__list-item">
-                    <button className="navbar__button">
-                    Tecnología
-                    </button>
+                    <NavLink to="/category/assets" className={ ({ isActive }) => (isActive ? "navbar__button navbar__button--active" : "navbar__button")}>
+                    Asset-Packs
+                    </NavLink>
                 </li>
 
                 <li className="navbar__list-item">
-                    <button className="navbar__button">
-                    Periféricos
-                    </button>
+                    <NavLink to="/category/commissions" className={ ({ isActive }) => (isActive ? "navbar__button navbar__button--active" : "navbar__button")}>
+                    Commissions
+                    </NavLink>
+                </li>
+
+                <li className="navbar__list-item">
+                    <NavLink to="/category/courses" className={ ({ isActive }) => (isActive ? "navbar__button navbar__button--active" : "navbar__button")}>
+                    Courses
+                    </NavLink>
                 </li>
             </ul>
 
