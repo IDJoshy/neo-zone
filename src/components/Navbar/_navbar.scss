@@ -13,14 +13,16 @@ $color-lighter: #0094C6;
     height: $nav-height;
     width: 100%;
     z-index: 5;
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-areas: "logo cart";
+    justify-content: center;
 
     backdrop-filter: blur(50px);
     background-color: $color-nav;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
 
-    gap: 2.5em;
+    gap: .5em;
 
     &__container
     {
@@ -43,9 +45,9 @@ $color-lighter: #0094C6;
         &--cart
         {
             align-items: center;
-            justify-content: center;
-            margin-right: 1em;
-            gap: 1em;
+            justify-content: right;
+            margin-right: 2.5em;
+            gap: 1.25em;
         }
         
     }
@@ -100,7 +102,7 @@ $color-lighter: #0094C6;
 
         &--socials
         {
-            gap:.5em;
+            gap:.75em;
         }
     }
 
@@ -109,6 +111,10 @@ $color-lighter: #0094C6;
         text-decoration: none;
         width: fit-content;
         height: fit-content;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         &:hover
         {
@@ -138,6 +144,9 @@ $color-lighter: #0094C6;
         font-family: Terminus;
         font-size: 1em;
         transition: 100ms ease-in-out;
+
+        display: flex;
+        flex-wrap: nowrap;
 
         text-decoration: none;
 

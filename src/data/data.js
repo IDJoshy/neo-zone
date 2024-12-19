@@ -1,7 +1,7 @@
 const products = [
     {
         "id": 1,
-        "title": "",
+        "title": "Plugin 1",
         "description": "",
         "preview": "",
         "price": 1,
@@ -11,7 +11,7 @@ const products = [
     },
     {
         "id": 2,
-        "title": "",
+        "title": "Plugin 2",
         "description": "",
         "preview": "",
         "price": 1,
@@ -21,7 +21,7 @@ const products = [
     },
     {
         "id": 3,
-        "title": "",
+        "title": "Plugin 3",
         "description": "",
         "preview": "",
         "price": 1,
@@ -31,7 +31,7 @@ const products = [
     },
     {
         "id": 4,
-        "title": "",
+        "title": "Asset 1",
         "description": "",
         "preview": "",
         "price": 1,
@@ -41,7 +41,7 @@ const products = [
     },
     {
         "id": 5,
-        "title": "",
+        "title": "Asset 2",
         "description": "",
         "preview": "",
         "price": 800,
@@ -51,7 +51,7 @@ const products = [
     },
     {
         "id": 6,
-        "title": "",
+        "title": "Asset 3",
         "description": "",
         "preview": "",
         "price": 1,
@@ -61,7 +61,7 @@ const products = [
     },
     {
         "id": 7,
-        "title": "",
+        "title": "Commission 1",
         "description": "",
         "preview": "",
         "price": 1,
@@ -71,7 +71,7 @@ const products = [
     },
     {
         "id": 8,
-        "title": "",
+        "title": "Commission 2",
         "description": "",
         "preview": "",
         "price": 1,
@@ -81,7 +81,7 @@ const products = [
     },
     {
         "id": 9,
-        "title": "",
+        "title": "Commission 3",
         "description": "",
         "preview": "",
         "price": 1,
@@ -91,7 +91,7 @@ const products = [
     },
     {
         "id": 10,
-        "title": "",
+        "title": "Course 1",
         "description": "",
         "preview": "",
         "price": 1,
@@ -101,7 +101,7 @@ const products = [
     },
     {
         "id": 11,
-        "title": "",
+        "title": "Course 2",
         "description": "",
         "preview": "",
         "price": 1,
@@ -111,7 +111,7 @@ const products = [
     },
     {
         "id": 12,
-        "title": "",
+        "title": "Course 3",
         "description": "",
         "preview": "",
         "price": 1,

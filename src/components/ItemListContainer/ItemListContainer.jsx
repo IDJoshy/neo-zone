@@ -37,7 +37,7 @@ const ItemListContainer = ({ greeting }) =>
     }, [idCategory]);
 
     return (
-        <div className="itemListContainer">
+        <div className="item-list-container">
             <h1>{greeting}</h1>
             {
                 loading === true ? (<h2>Loading...</h2>) : (<ItemList products={products} />)
