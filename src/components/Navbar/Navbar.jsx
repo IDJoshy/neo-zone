@@ -7,8 +7,8 @@ import GitHub from "../Socials/GitHub.jsx";
 import LinkedIn from "../Socials/LinkedIn.jsx";
 import Instagram from "../Socials/Instagram.jsx";
 import { useState } from "react";
-import Hamburger from "./Hamburger";
-import Cartwidget from "./Cartwidget";
+import Hamburger from "./Hamburger.jsx";
+import CartWidget from "./Cartwidget.jsx";
 
 const Navbar = () => 
 {
@@ -91,7 +91,7 @@ const Navbar = () =>
                 </li>
             </ul>
 
-            <Cartwidget />
+            <CartWidget />
 
         </nav>
     );
