@@ -1,6 +1,5 @@
 import "./_navbar.scss";
 import "../Socials/_socials.scss";
-import CartWidget from "./Cartwidget";
 import dotted from "../../assets/img/ephemeral_dotted.png";
 import { NavLink } from "react-router-dom";
 
@@ -9,6 +8,7 @@ import LinkedIn from "../Socials/LinkedIn.jsx";
 import Instagram from "../Socials/Instagram.jsx";
 import { useState } from "react";
 import Hamburger from "./Hamburger";
+import Cartwidget from "./Cartwidget";
 
 const Navbar = () => 
 {
@@ -91,7 +91,7 @@ const Navbar = () =>
                 </li>
             </ul>
 
-            <CartWidget />
+            <Cartwidget />
 
         </nav>
     );
