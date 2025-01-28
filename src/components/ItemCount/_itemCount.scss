@@ -1,0 +1,76 @@
+$color-default: #e1faf9;
+$color-lighter: #0094C6;
+
+.item-count
+{
+    &__container
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+
+        width: 300px;
+        height: 75px;
+
+    }
+
+    &__button
+    {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: none;
+        background-color: $color-default;
+        cursor: pointer;
+        color: $color-lighter;
+        font-family: Inconsolata;
+        font-size: 1.25em;
+        transition: all .25s;
+
+        &:hover
+        {
+            background-color: $color-lighter;
+            color: $color-default;
+        }
+
+        &--decrement
+        {
+            &:hover
+            {
+                transform: scale(1.15) rotate(360deg);
+            }
+        }
+
+        &--increment
+        {
+            &:hover
+            {
+                transform: scale(1.15) rotate(-360deg);
+            }
+        }
+
+        &--add
+        {
+            width: 125px;
+            height: 35px;
+            border-radius: 5px;
+            font-size: 1em;
+
+            &:hover
+            {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    &__text
+    {
+        font-family: Inconsolata;
+        color: $color-default;
+        font-size: 1.25em;
+        text-decoration: underline;
+        text-align: center;
+        text-decoration-color: $color-lighter;
+    }
+}

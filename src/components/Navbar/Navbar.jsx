@@ -7,8 +7,18 @@ import { NavLink } from "react-router-dom";
 import GitHub from "../Socials/GitHub.jsx";
 import LinkedIn from "../Socials/LinkedIn.jsx";
 import Instagram from "../Socials/Instagram.jsx";
+import { useState } from "react";
+import Hamburger from "./Hamburger";
 
-const Navbar = () => {
+const Navbar = () => 
+{
+    const [showHamburger, setShowHamburger] = useState(false);
+
+    const toggleHamburger = () => 
+    {
+        setShowHamburger((prev) => !prev);
+    };
+
     return (
         <nav className="navbar">
 
@@ -24,6 +34,14 @@ const Navbar = () => {
                 </div>
                 
             </div>
+
+            <button onClick={toggleHamburger} className={`navbar__hamburger ${showHamburger ? "navbar__hamburger--active" : ""}`} >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <Hamburger showHamburger={showHamburger} />
 
             <ul className="navbar__list navbar__list--links">
 

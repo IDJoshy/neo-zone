@@ -1,0 +1,148 @@
+$nav-height: 64px;
+$color-default: #e1faf9;
+$color-nav: #1c1e227e; //#1c1e22;
+$color-dark: #001242;
+$color-light: #005E7C;
+$color-lighter: #0094C6;
+
+.hamburger
+{
+    position: fixed;
+    top: $nav-height;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 0px;
+
+    transition: height .5s ease-in-out;
+    overflow: hidden;
+
+    backdrop-filter: blur(50px);
+    background-color: $color-nav;
+
+    &--active
+    {
+        height: calc(100vh - #{$nav-height});
+    }
+
+    &__list
+    {
+        display: flex;
+        gap: 2em;
+        padding: 1em;
+
+        &--links
+        {
+            flex-direction: column;
+            justify-content: flex-start;
+            position: absolute;
+            top: 50px;
+            left: 25px;
+        }
+
+        &--socials
+        {
+            margin-top: 50px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__button
+    {
+        cursor: pointer;
+        background: none;
+        padding: 5px;
+        color: $color-default;
+        font-family: Terminus;
+        font-size: 1.25em;
+        transition: 100ms ease-in-out;
+
+        width: 240px;
+
+        display: flex;
+        flex-wrap: nowrap;
+
+        text-decoration: none;
+        &:hover
+        {
+            color: $color-dark;
+            background: $color-lighter;
+        }
+    }
+
+    &__link
+    {
+        text-decoration: none;
+        width: fit-content;
+        height: fit-content;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover
+        {
+            .hamburger__icon--linkedin
+            {
+                fill: #0a66c2;
+            }
+
+            .hamburger__icon--github
+            {
+                fill: #865cd4;
+            }
+
+            .hamburger__icon--instagram
+            {
+                fill: #C13584;
+            }
+        }
+    }
+
+    &__icon
+    {
+        width: 25px;
+        height: 25px;
+        fill: $color-default;
+        transition: fill .25s;
+        pointer-events: none;
+    }
+
+    &--hidden
+    {
+        display: none;
+    }
+
+    @media screen and (min-width: 1024px)
+    {
+        height: 0px;   
+    }
+
+    @media screen and (max-height: 520px)
+    {   
+
+        &__list
+        {
+            &--links
+            {
+                gap: 15px;
+                top: 20px;
+            }
+
+            &--socials
+            {
+                left: 75%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+    }
+
+}
+
