@@ -1,6 +1,6 @@
 # _NEO-ZONE React E-COMMERCE_
 
-[![NeoZone>](https://github.com/IDJoshy/Student-Buddy/blob/main/assets/image/button/rose_button.gif?raw=true)]()
+[![NeoZone>](https://github.com/IDJoshy/Student-Buddy/blob/main/assets/image/button/rose_button.gif?raw=true)](https://neo-zone.vercel.app/)
 
 Project made for CoderHouse's React Course.
 
