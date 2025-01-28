@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./_itemCount.scss";
+import "./_itemcount.scss";
 
 const ItemCount = ({ stock, addProductInCart }) => 
 {

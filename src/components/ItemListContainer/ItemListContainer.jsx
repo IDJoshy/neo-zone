@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import db from '../../db/db.js';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 
-import "./_itemListContainer.scss";
+import "./_itemlistcontainer.scss";
 
 const ItemListContainer = ({ greeting }) => 
 {
