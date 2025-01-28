@@ -1,6 +1,6 @@
 import "./_navbar.scss";
 import "../Socials/_socials.scss";
-import CartWidget from "./Cartwidget.jsx";
+import CartWidget from "./Cartwidget";
 import dotted from "../../assets/img/ephemeral_dotted.png";
 import { NavLink } from "react-router-dom";
 
