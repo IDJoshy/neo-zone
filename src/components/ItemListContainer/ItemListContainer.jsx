@@ -70,11 +70,12 @@ const ItemListContainer = ({ greeting }) =>
             <h1 className="item-list-container__text item-list-container__text--greeting">{greeting}</h1>
             <span className="item-list-container__line"></span>
             <span className="item-list-container__line"></span>
-            {
-                loading === true ? (<h2>Loading...</h2>) : (<ItemList products={products} />)
-            }
+            <ItemList products={products} loading={loading} />
         </div>
     )
-
+    
 }
 export default ItemListContainer
+// {
+//     loading === true ? (<h2>Loading...</h2>) : (<ItemList products={products} />)
+// }

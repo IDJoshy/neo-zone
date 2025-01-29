@@ -1,14 +1,19 @@
 import Item from "./Item"
+import ItemSkeleton from "./ItemSkeleton";
 
-const ItemList = ({ products }) => {
+const ItemList = ({ products, loading }) => {
   return (
     <div className="item-list-container__list">
       {
-        products.map((product) => (
-          <Item product={product} key={product.id} />
-        ))
+        loading ? Array(6).fill().map((_, index) => <ItemSkeleton key={index} />) : products.map((product) => <Item product={product} key={product.id} />)
       }
     </div>
   )
 }
 export default ItemList
+
+// {
+//   products.map((product) => (
+//     <Item product={product} key={product.id} />
+//   ))
+// }
