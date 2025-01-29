@@ -7,6 +7,13 @@ const ItemList = ({ products, loading }) => {
       {
         loading ? Array(6).fill().map((_, index) => <ItemSkeleton key={index} />) : products.map((product) => <Item product={product} key={product.id} />)
       }
+
+      {/* For testing purposes
+      {
+        Array(6).fill().map((_, index) => <ItemSkeleton key={index} />)
+      } 
+      */}
+      
     </div>
   )
 }

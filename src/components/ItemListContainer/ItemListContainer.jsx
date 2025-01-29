@@ -66,7 +66,7 @@ const ItemListContainer = ({ greeting }) =>
     }, [idCategory]);
 
     return (
-        <div className="item-list-container">
+        <div className="container item-list-container">
             <h1 className="item-list-container__text item-list-container__text--greeting">{greeting}</h1>
             <span className="item-list-container__line"></span>
             <span className="item-list-container__line"></span>

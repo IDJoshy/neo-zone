@@ -1,7 +1,23 @@
 //Color Palette
 $color-default: #e1faf9;
-$color-background: #040F16;
-$color-darker: #000022;
+$color-nav: #1c1e227e; //#1c1e22;
 $color-dark: #001242;
 $color-light: #005E7C;
 $color-lighter: #0094C6;
+$color-description: #50d0fb;
+
+$nav-height: 64px;
+
+//General Use Classes
+
+.container
+{
+    padding: calc(#{$nav-height} + 30px) 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    min-height: 100vh;
+}
+

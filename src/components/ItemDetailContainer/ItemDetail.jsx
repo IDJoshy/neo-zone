@@ -20,7 +20,7 @@ const ItemDetail = ({ product }) =>
     }
 
     return(
-        <div className="item-detail">
+        <div className="container item-detail">
 
             <div className="item-detail__container item-detail__container--details">
                 <Link to="/" className="item-detail__button item-detail__button--back"> &lt; All Products </Link>

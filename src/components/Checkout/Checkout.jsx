@@ -59,7 +59,7 @@ const Checkout = () =>
 
 
     return (
-        <div className="checkout"> 
+        <div className="container checkout"> 
             {   
                 orderId ? 
                 (

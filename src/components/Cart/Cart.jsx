@@ -15,9 +15,9 @@ const Cart = () => {
     }
 
     return (
-        <div className="cart cart--not-empty">
+        <div className="container cart">
 
-<Link to="/" className="cart__button cart__button--back">&#60; All Products</Link>
+            <Link to="/" className="cart__button cart__button--back">&#60; All Products</Link>
 
             <strong className="cart__text cart__text--title cart__text--title-not-empty">
              {">"} Product Cart {"<"}

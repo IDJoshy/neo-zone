@@ -19,6 +19,7 @@ function App()
         <CartProvider>
           <Navbar />
           <Hamburger />
+
           <ToastContainer theme="dark" position="bottom-center" />
 
           <Routes>

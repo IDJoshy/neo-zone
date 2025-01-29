@@ -9,18 +9,7 @@ $color-red: #ff0000;
 
 .cart
 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 4;
-    padding: calc(#{$nav-height} + 30px) 10px 50px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
     gap: 3em;
-    
 
     &__products
     {
