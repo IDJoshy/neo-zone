@@ -19,17 +19,9 @@ $color-red: #ff0000;
     align-items: center;
     width: 100%;
     height: fit-content;
-
-    &--empty
-    {
-        gap: 3em;
-    }
-
-    &--not-empty
-    {
-        gap: 2.5em;
-    }
+    gap: 3em;
     
+
     &__products
     {
         display: flex;

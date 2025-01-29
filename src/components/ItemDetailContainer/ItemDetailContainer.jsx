@@ -50,7 +50,7 @@ const ItemDetailContainer = () => {
   if(error)
   {
     return (
-      <ErrorHandler error="Product not found or doesn't exist [404]" />
+      <ErrorHandler error="Product not found or doesn't exist [404]" className='error--red'/>
     )
   }
 

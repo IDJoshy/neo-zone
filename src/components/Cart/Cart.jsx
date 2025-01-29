@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
+import ErrorHandler from "../Error/Error";
 import "./_cart.scss";
 
 const Cart = () => {
@@ -9,17 +10,14 @@ const Cart = () => {
     if( cart.length === 0 ) 
     {
         return (
-            <div className="cart cart--empty"> 
-                <Link to="/" className="cart__button cart__button--back">&#60; Go back</Link>
-                <h2 className="cart__text cart__text--title cart__text--title-empty">Oops... There's nothing here! 😥</h2>
-            </div>
+            <ErrorHandler error="There are no products in the cart" className="error--green"/>
         )
     }
 
     return (
         <div className="cart cart--not-empty">
 
-            <Link to="/" className="item-detail__button item-detail__button--back"> &lt; All Products </Link>
+<Link to="/" className="cart__button cart__button--back">&#60; All Products</Link>
 
             <strong className="cart__text cart__text--title cart__text--title-not-empty">
              {">"} Product Cart {"<"}
