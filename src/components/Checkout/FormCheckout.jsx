@@ -21,6 +21,11 @@ const FormCheckout = ({ dataForm, handleChangeInput, handleSubmitForm }) =>
                     <label className="checkout__text checkout__text--label" htmlFor="email">Email: </label>
                     <input type="text" name="email" id="email" className="checkout__input checkout__input--email" value={dataForm.email} onChange={handleChangeInput} />
                 </div>
+                
+                <div className="checkout__container checkout__container--input">
+                    <label className="checkout__text checkout__text--label" htmlFor="confirmEmail">Confirm Email: </label>
+                    <input type="text" name="confirmEmail" id="confirmEmail" className="checkout__input checkout__input--email" value={dataForm.confirmEmail} onChange={handleChangeInput} />
+                </div>
 
                 <button type="submit" className="checkout__button checkout__button--submit">Send Order</button>
 
