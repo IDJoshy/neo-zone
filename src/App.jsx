@@ -7,6 +7,7 @@ import { CartProvider } from './context/CartContext.jsx';
 import Cart from './components/Cart/Cart.jsx';
 import Checkout from './components/Checkout/Checkout.jsx';
 import { ToastContainer } from 'react-toastify';
+import ErrorHandler from './components/Error/Error.jsx';
 import './styles/_app.scss';
 
 
@@ -26,7 +27,7 @@ function App()
             <Route path="/detail/:idProduct" element={<ItemDetailContainer />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
-            {/* <Route path="*" element={<h1>404 - Page not found</h1>} /> */}
+            <Route path="*" element={<ErrorHandler error={"404 Page not found"} className='error--blue'/>} />
           </Routes>
 
         </CartProvider>
