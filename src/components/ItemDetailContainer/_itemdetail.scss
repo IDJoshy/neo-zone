@@ -8,6 +8,7 @@ $color-description: #50d0fb;
 
 .item-detail
 {
+    padding: calc(#{$nav-height} + 30px) 10px 75px 10px;
     gap: 1.5em;
 
     &__container
@@ -43,13 +44,10 @@ $color-description: #50d0fb;
         {
             gap: 1em;
             padding: 15px;
-            // position: relative;
-
             border: 1px solid $color-default;
             border-radius: 15px;
             overflow: hidden;
-            width: 100%;
-            height: fit-content;
+            height: 305px;
             background-color: #0d0d0f7e;
         }
 

@@ -6,7 +6,7 @@ import { collection, getDocs, query, where } from 'firebase/firestore';
 
 import "./_itemlistcontainer.scss";
 
-const ItemListContainer = ({ greeting }) => 
+const ItemListContainer = () => 
 {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -67,7 +67,6 @@ const ItemListContainer = ({ greeting }) =>
 
     return (
         <div className="container item-list-container">
-            <h1 className="item-list-container__text item-list-container__text--greeting">{greeting}</h1>
             <span className="item-list-container__line"></span>
             <span className="item-list-container__line"></span>
             <ItemList products={products} loading={loading} />

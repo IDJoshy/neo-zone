@@ -9,6 +9,7 @@ $color-red: #ff0000;
 
 .cart
 {
+    padding: calc(#{$nav-height} + 30px) 10px 75px 10px;
     gap: 3em;
 
     &__products

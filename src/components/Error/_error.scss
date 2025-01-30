@@ -12,6 +12,7 @@ $error-background-green: linear-gradient(180deg, rgba(3, 179, 3, 0.5), rgba(0, 0
 
 .error
 {
+    padding: calc(#{$nav-height} + 30px) 10px 75px 10px;
     gap: 1.5em;
     
     &--red

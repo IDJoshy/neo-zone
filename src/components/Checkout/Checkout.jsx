@@ -63,7 +63,7 @@ const Checkout = () =>
             {   
                 orderId ? 
                 (
-                    <div className="checkout__container"> 
+                    <div className="checkout__container checkout__container--success"> 
                         <Link to="/" className="checkout__button checkout__button--back">{"<"} Go back</Link>
                         <h2 className="checkout__text checkout__text--title">Thank you for your purchase!</h2>
                         <p className="checkout__text checkout__text--order">Your order number is: {orderId}</p>
@@ -72,7 +72,28 @@ const Checkout = () =>
                 )
                 : 
                 (
-                    <FormCheckout dataForm={dataForm} handleChangeInput={handleChangeInput} handleSubmitForm={handleSubmitForm} />
+                    <div className="container checkout__container"> 
+                        <Link to="/" className="checkout__button checkout__button--back">{"<"} Go back</Link>
+
+                        <h2 className="checkout__text checkout__text--title">Review your order</h2>
+                            
+                        <div className="checkout__products">
+                            {cart.map((product) => (
+                                <div className="checkout__item" key={product.id}>
+                                    <img className="checkout__img" src={product.image} alt={product.title} width={100} />
+                                    <div className="checkout__info">
+                                        <p className="checkout__text checkout__text--product-title">{product.title}</p>
+                                        <p className="checkout__text checkout__text--product-price">Price: ${product.price}</p>
+                                        <p className="checkout__text checkout__text--product-quantity">Quantity: {product.quantity}</p>
+                                        <p className="checkout__text checkout__text--product-total">Total: ${product.price * product.quantity}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                        <FormCheckout dataForm={dataForm} handleChangeInput={handleChangeInput} handleSubmitForm={handleSubmitForm} />
+                    </div>
+
                 )
             }
         </div>
